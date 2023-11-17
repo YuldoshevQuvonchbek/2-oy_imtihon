@@ -1,0 +1,109 @@
+.hero {
+  background-color: $lightblue;
+}
+.hero_container__line_left {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url(/img/pointer-left.svg);
+}
+.hero_container__line_reat {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url(/img/pointer-reat.svg);
+}
+.hero_container {
+  padding-top: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero_container__cart {
+  display: flex;
+  gap: 48px;
+}
+.hero_container__cart_content {
+  padding-top: 21px;
+}
+.cart_content__title {
+  color: $color;
+  font-size: 88px;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+.cart_content__title span {
+  display: inline-block;
+  width: 101px;
+  height: 45px;
+  border-radius: 500px;
+  border: 11px solid $color;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.cart_content__text {
+  color: $color;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 19px;
+}
+.cart_content__text span {
+  color: $color;
+  font-size: 32px;
+  font-weight: 400;
+  margin-right: 16px;
+}
+.cart_content__btn {
+  border-radius: 8px;
+  background-color: $prime;
+  color: $white;
+  padding: 19px 39px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.hero_container__cart_img_img {
+  vertical-align: bottom;
+}
+.hero_container__cart_img_img3,
+.hero_container__cart_img_img2 {
+  display: none;
+}
+//
+
+@media screen and (max-width: 1029px) {
+  .hero_container__cart {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero_container__cart_img_img {
+    display: none;
+  }
+  .hero_container__cart_img_img2 {
+    display: flex;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cart_content__title {
+    font-size: 37.068px;
+  }
+  .hero_container__cart_img_img2 {
+    display: none;
+  }
+  .hero_container__cart_img_img3 {
+    display: flex;
+  }
+  .cart_content__title span {
+    width: 42px;
+    height: 19px;
+    border: 4.633px solid $color;
+    margin-left: 3px;
+  }
+  .cart_content__text {
+    font-size: 32px;
+  }
+  .cart_content__text span {
+    font-size: 20px;
+  }
+}
